@@ -5,11 +5,11 @@ import MeetupDetail from "../../components/meetups/MeetupDetail";
 const MeetupDetails = ({ meetupData }) => {
 	return (
 		<>
-			{/* <Head>
+			<Head>
 				<title>{meetupData.title}</title>
 
 				<meta name="description" content={meetupData.description} />
-			</Head> */}
+			</Head>
 			<MeetupDetail
 				image={meetupData.image}
 				title={meetupData.title}
