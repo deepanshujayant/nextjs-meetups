@@ -6,9 +6,9 @@ const MeetupDetails = ({ meetupData }) => {
 	return (
 		<>
 			<Head>
-				<title>{meetupData.title}</title>
+				<title>React Meetups</title>
 
-				<meta name="description" content={meetupData.description} />
+				<meta name="description" content="Descripton test" />
 			</Head>
 			<MeetupDetail
 				image={meetupData.image}
