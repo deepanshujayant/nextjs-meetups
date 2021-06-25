@@ -2,19 +2,19 @@ import { MongoClient, ObjectId } from "mongodb";
 import Head from "next/head";
 import MeetupDetail from "../../components/meetups/MeetupDetail";
 
-const MeetupDetails = ({ meetupData }) => {
+const MeetupDetails = (props) => {
 	return (
 		<>
 			<Head>
-				<title>React Meetups</title>
+				<title>{props.title}</title>
 
 				<meta name="description" content="Descripton test" />
 			</Head>
 			<MeetupDetail
-				image={meetupData.image}
-				title={meetupData.title}
-				address={meetupData.address}
-				description={meetupData.description}
+				image={props.image}
+				title={props.title}
+				address={props.address}
+				description={props.description}
 			/>
 		</>
 	);
@@ -55,12 +55,10 @@ export const getStaticProps = async (ctx) => {
 
 	return {
 		props: {
-			meetupData: {
-				id: selectedMeetup._id.toString(),
-				title: selectedMeetup.title,
-				image: selectedMeetup.image,
-				description: selectedMeetup.description,
-			},
+			id: selectedMeetup._id.toString(),
+			title: selectedMeetup.title,
+			image: selectedMeetup.image,
+			description: selectedMeetup.description,
 		},
 	};
 };
