@@ -1,0 +1,38 @@
+.cursor{
+    cursor: pointer;
+}
+.hoverElement {
+	/* background-color: beige; */
+	opacity: 0;
+	height: 5rem;
+	
+	bottom: 2%;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,d1d1d1+51,fefefe+100&1+0,0+100;Grey+Gloss+%231 */
+	background: -moz-linear-gradient(
+		bottom,
+		rgba(226, 226, 226, 1) 0%,
+		rgba(219, 219, 219, 0.5) 50%,
+		rgba(209, 209, 209, 0.49) 51%,
+		rgba(254, 254, 254, 0) 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		bottom,
+		rgba(226, 226, 226, 1) 0%,
+		rgba(219, 219, 219, 0.5) 50%,
+		rgba(209, 209, 209, 0.49) 51%,
+		rgba(254, 254, 254, 0) 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to top,
+		rgba(226, 226, 226, 1) 0%,
+		rgba(219, 219, 219, 0.5) 50%,
+		rgba(209, 209, 209, 0.49) 51%,
+		rgba(254, 254, 254, 0) 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#00fefefe',GradientType=0 ); /* IE6-9 */
+}
+
+.hoverElement:hover {
+	opacity: 1;
+	/* border: 2px solid blue; */
+}

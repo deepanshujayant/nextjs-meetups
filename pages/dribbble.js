@@ -1,23 +1,29 @@
 // import { useEffect, useState } from "react";
 import { useState } from "react";
+import Navbar from "../components/layout/navbar";
 import LoopingCards from "../components/meetups/LoopingCards";
 import { url } from "./api/dribble";
 const dribbble = ({ data }) => {
-	
 	const dribbleHandler = () => {
 		console.log(data);
 	};
 	return (
 		<>
-			<LoopingCards
-                key = {data.id}
-                shots = {data}
-				/* title={shot.title}
+			<Navbar />
+			<div className="container justify-content-center">
+                <br />
+				<LoopingCards
+					key={data.id}
+					shots={data}
+					/* title={shot.title}
 				image={shot.image}
 				desc={shot.descpription}
 				url={shot.htmlUrl} */
-			/>
-			<button onClick={dribbleHandler}>Test Button</button>
+				/>
+				<button className="btn btn-primary" onClick={dribbleHandler}>
+					Test Button
+				</button>
+			</div>
 		</>
 	);
 };
@@ -28,9 +34,9 @@ export const getStaticProps = async () => {
 	return {
 		props: {
 			data: data.map((shots) => ({
-                id:shots.id,
+				id: shots.id,
 				title: shots.title,
-				image: shots.images.hidpi,
+				image: shots.images.normal,
 				descpription: shots.description,
 				htmlUrl: shots.html_url,
 			})),
