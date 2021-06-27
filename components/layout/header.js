@@ -33,7 +33,7 @@ const Header = () => {
 						</a>
 					</div>
 				</div>
-				<nav className="navbar navbar-expand-sm p-0 navbar-light bg-white">
+				<nav className="navbar navbar-expand-sm p-0 d-none d-lg-block navbar-light bg-white">
 					<ul className="nav navbar-nav">
 						<li className="nav-item active">
 							<a className="nav-link btn-light btn" href="#">
