@@ -1,7 +1,7 @@
 const Navbar = () => {
 	return (
 		<>
-			<nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom py-4">
+			<nav className="navbar navbar-expand-sm navbar-light bg-white border-bottom py-4">
 				<a className="navbar-brand" href="#">
 					dribble
 				</a>
@@ -65,6 +65,7 @@ const Navbar = () => {
 					</form>
 				</div>
 			</nav>
+
 		</>
 	);
 };

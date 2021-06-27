@@ -1,0 +1,11 @@
+.list{
+    overflow-x: scroll;
+}
+.list ul{
+    padding: 0;
+    margin: 0;
+}
+
+.list ul li{
+    display: inline-block;
+}
