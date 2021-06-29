@@ -4,7 +4,7 @@ const Header = () => {
 	return (
 		<header>
 			<div className="d-flex justify-content-between">
-				<div class="dropdown border rounded">
+				<div className="dropdown border rounded">
 					<a
 						className="btn dropdown-toggle"
 						href="#"
@@ -37,7 +37,7 @@ const Header = () => {
 					<ul className="nav navbar-nav">
 						<li className="nav-item active">
 							<a className="nav-link btn-light btn" href="#">
-								All<span class="sr-only">(current)</span>
+								All<span className="sr-only">(current)</span>
 							</a>
 						</li>
 						<li className="nav-item">

@@ -1,0 +1,14 @@
+.closeSize{
+    font-size: 3rem;
+    color: white;
+}
+
+.shotDetail{
+    height: 3.5rem;
+    background-color: black;
+    
+}
+
+.paddingCustom{
+    padding: 0 10rem;
+}
