@@ -1,7 +1,7 @@
 import { MongoClient, ObjectId } from "mongodb";
 import Head from "next/head";
 import MeetupDetail from "../../components/meetups/MeetupDetail";
-import Layout from "../../components/layout/Layout";
+// import Layout from "../../components/layout/Layout";
 
 const MeetupDetails = (props) => {
 	return (
@@ -11,14 +11,12 @@ const MeetupDetails = (props) => {
 
 				<meta name="description" content="Descripton test" />
 			</Head>
-			<Layout>
-				<MeetupDetail
-					image={props.image}
-					title={props.title}
-					address={props.address}
-					description={props.description}
-				/>
-			</Layout>
+			<MeetupDetail
+				image={props.image}
+				title={props.title}
+				address={props.address}
+				description={props.description}
+			/>
 		</>
 	);
 };
@@ -33,7 +31,7 @@ export const getStaticPaths = async () => {
 	const meetups = await meetupsCollection.find({}, { _id: 1 }).toArray();
 
 	client.close();
-	
+
 	return {
 		fallback: true,
 		paths: meetups.map((meetup) => ({

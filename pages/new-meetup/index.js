@@ -1,7 +1,7 @@
 import NewMeetupForm from "../../components/meetups/NewMeetupForm";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import Layout from "../components/layout/Layout";
+//import Layout from "../components/layout/Layout";
 
 const NewMeetup = () => {
 	const router = useRouter();
@@ -25,9 +25,8 @@ const NewMeetup = () => {
 				<title>React Meetups</title>
 				<meta name="description" content="test descp" />
 			</Head>
-			<Layout>
-				<NewMeetupForm onAddMeetup={addMeetupHandler} />
-			</Layout>
+			<NewMeetupForm onAddMeetup={addMeetupHandler} />
+
 		</>
 	);
 };

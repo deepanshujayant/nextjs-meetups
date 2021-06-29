@@ -1,7 +1,7 @@
 import Meetuplist from "../components/meetups/MeetupList";
 import { MongoClient } from "mongodb";
 import Head from "next/head";
-import Layout from "../components/layout/Layout";
+// import Layout from "../components/layout/Layout";
 
 const homepage = (props) => {
 	return (
@@ -10,10 +10,9 @@ const homepage = (props) => {
 				<title>React Meetups</title>
 				<meta name="description" content="test descp" />
 			</Head>
-			<Layout>
-				<Meetuplist meetups={props.meetups} />
-			</Layout>
-			<div id="modal"></div>
+			<Meetuplist meetups={props.meetups} />
+
+			{/* <div id="modal"></div> */}
 		</>
 	);
 };
